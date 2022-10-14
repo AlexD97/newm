@@ -294,6 +294,7 @@ class View(PyWMView[Layout], Animate[PyWMViewDownstreamState], Animatable):
                 top = False
             elif self.panel == "bar":
                 top = result.box[1] < 1.
+                top = not top
 
             if top:
                 x, y, w, h = 0., 0., 0., 0. # mypy

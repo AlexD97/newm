@@ -77,7 +77,7 @@ class SSDs(Animatable, DamageTracked):
         self.update()
 
     def update(self) -> None:
-        self.destroy()
+        #self.destroy()
         if conf_enabled():
             self.ssds = [self.wm.create_widget(SSD, o, self) for o in self.wm.layout]
 
